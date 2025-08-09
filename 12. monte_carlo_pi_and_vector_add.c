@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 12
 // 12.4.2024
-// This assignment is for calculate pi in c and calling the function of c into python.
+// This program is for calculate pi in c and calling the function of c into python.
 
 #include <stdlib.h>
 #include <stdio.h>
