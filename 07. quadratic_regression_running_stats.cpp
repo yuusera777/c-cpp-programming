@@ -1,8 +1,28 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 7
-// 10.29.2024
-// This program is for reading matrix data and calculating the running averages and variances using equations.
+/* ==============================================================================================================
+Title: Quadratic Regression using Running Statistics
+Author: Yuhyun Kim
+Date: 10.29.2024
+
+Description:
+  Performs quadratic regression without storing all data points.
+  Uses running statistics to update sums and cross-products, enabling large dataset handling.
+
+Inputs:
+  - File: "QuadraticData.txt"
+      Each line: x y
+
+Outputs:
+  - Console: quadratic regression equation coefficients
+
+Key Skills Demonstrated:
+  - Quadratic regression computation
+  - Running sum updates
+  - Avoiding array-based storage
+
+The Most Important Thing:
+  - Demonstrates higher-order regression with minimal memory use.
+============================================================================================================== */
+
 
 #include <cstdio>
 #include <cmath>
