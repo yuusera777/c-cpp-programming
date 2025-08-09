@@ -1,8 +1,32 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 4b
-// 10.3.2024
-// This program is for calculating matrix multiplication using Cramer's Rule.
+/* ==============================================================================================================
+
+Title: Linear System Solver using Cramer's Rule (2×2 / 3×3)
+Author: Yuhyun Kim
+Date: 10.3.2024
+
+Description:
+  Reads multiple coefficient matrices and RHS vectors from data files (2×2 or 3×3 systems)
+  and solves each system using Cramer's Rule. Prints the solution vector for each file.
+
+Inputs:
+  - Files: "Data2_1.txt", "Data2_2.txt", ..., "Data2_6.txt"
+      Format per file:
+        n
+        <n×n coefficients followed by n RHS values>
+
+Outputs:
+  - Console:
+      Solution for <filename>: x1 x2 [x3]
+
+Key Skills Demonstrated:
+  - Determinant computation (2×2 and 3×3)
+  - Column replacement and per-variable determinant ratio (Cramer's Rule)
+  - C++ file I/O (ifstream) and vector-based matrix handling
+  - Singular check (detA == 0) guard
+
+The Most Important Thing:
+  - Robust application of Cramer's Rule with proper detA!=0 validation across multiple datasets.
+*/ ==============================================================================================================
 
 #include <iostream>
 #include <fstream>
