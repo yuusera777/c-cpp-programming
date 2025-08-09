@@ -1,8 +1,28 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 9
-// 11.13.2024
-// This program calculates the area using the Midpoint Rule and Simpson's Rule.
+/* ==============================================================================================================
+Title: Numerical Integration (Midpoint & Simpson's Rule)
+Author: Yuhyun Kim
+Date: 11.13.2024
+
+Description:
+  Calculates definite integrals using both the Midpoint Rule and Simpson's Rule.
+  Compares computed areas with exact integral values and reports absolute/relative errors.
+
+Inputs:
+  - User input: lower limit, upper limit
+  - Step sizes: predefined array {1.0, 0.5, 0.25}
+
+Outputs:
+  - Console: exact area, computed area by each method, and error metrics
+
+Key Skills Demonstrated:
+  - Numerical integration techniques
+  - Error analysis (absolute & relative)
+  - Function pointer usage in integration routines
+
+The Most Important Thing:
+  - Shows practical differences between integration methods in terms of accuracy.
+============================================================================================================== */
+
 
 
 #include <stdio.h>
