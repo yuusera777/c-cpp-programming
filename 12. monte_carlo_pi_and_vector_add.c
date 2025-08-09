@@ -5,8 +5,9 @@ Date: 12.4.2024
 
 Description:
   Provides two standalone C functions:
-    - calc_pi(iterations, seed): estimates π by Monte Carlo sampling in the unit square (prints and returns π).
-    - vector_add(x, y, result, n): elementwise vector addition.
+    - calc_pi(iterations, seed): estimates π by Monte Carlo sampling in the unit square
+      (quarter-circle test); prints π with 15 decimal places and returns it.
+    - vector_add(x, y, result, n): elementwise vector addition (assumes valid pointers and n > 0).
   Designed to be invoked from Python (e.g., ctypes/cffi); no main() provided.
 
 Inputs:
@@ -14,17 +15,18 @@ Inputs:
       iterations (int), seed (int), and pointers/lengths for vector_add
 
 Outputs:
-  - Console: "PI: <value>" printed by calc_pi
+  - Console: "PI: <value>" printed by calc_pi (%.15f)
   - result[] filled by vector_add
 
 Key Skills Demonstrated:
   - Probabilistic estimation (Monte Carlo)
   - C ABI surface for Python interop
-  - Safe pointer-based array operations
+  - Pointer-based array operations (assumes inputs are valid)
 
 The Most Important Thing:
   - Clean, reusable C functions suitable for direct binding from Python.
 ============================================================================================================== */
+
 
 
 
