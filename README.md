@@ -1,3 +1,2 @@
 # c-cpp-programming
-C/C++ algorithm and system programming projects
-HW 1,2,3 files
+Developed C/C++ projects in algorithms and system programming, including matrix computations, Cramer’s rule implementation, sorting algorithms, and numerical root-finding methods.
