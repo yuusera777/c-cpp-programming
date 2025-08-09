@@ -1,9 +1,28 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 2
-// 09.11.2024
-// This program is for programming C using float type and iterate addition using for loop.
+/* ===============================================================================================================
+Title: Floating-Point Accumulation with For-Loop
+Author: Yuhyun Kim
+Date: 09.11.2024
 
+Description:
+  Initializes two floats and adds 1e-7 repeatedly (10,000,000 iterations) using a for-loop,
+  then prints the final values. Demonstrates floating-point accumulation behavior and precision limits.
+
+Inputs:
+  - None (iteration count and step are hard-coded)
+
+Outputs:
+  - Console lines:
+      var1: <final_value>
+      var2: <final_value>
+
+Key Skills Demonstrated:
+  - For-loop iteration control
+  - Single-precision (float) arithmetic and literal suffixes (e.g., 1.e-7f)
+  - Observing rounding error / precision drift in repeated additions
+
+The Most Important Thing:
+  - Understanding how floating-point precision accumulates error in long iterative updates.
+*/ ===============================================================================================================
 
 #include <stdio.h>
 
