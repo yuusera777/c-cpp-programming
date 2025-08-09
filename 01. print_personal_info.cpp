@@ -1,10 +1,33 @@
-// Yuhyun Kim
-// ykim213@gmu.edu, katriyh777@gmail.com
-// CDS 251
-// Assignment 1 
-// 09.04.2024
+/* 
+Title: Console Print – Personal & Course Info
+Author: Yuhyun Kim
+Email: ykim213@gmu.edu, katriyh777@gmail.com
+Date: 09.04.2024
 
-// This program prints personal information (name, email, course, assignment number, and due date) to the console.
+Description:
+  Prints personal and course information (name, email, course, assignment number, due date)
+  to the console. Introductory exercise to verify toolchain and practice formatted output.
+
+Inputs:
+  - None (all values are defined as string literals in the code)
+
+Outputs:
+  - Console lines:
+      name
+      email_address
+      course_number
+      assignment_number
+      due_date
+
+Key Skills:
+  - Basic C I/O with printf
+  - String literals and character arrays
+  - Simple program structure and console formatting
+
+The Most Important Thing:
+  - Clear console output that verifies the environment and I/O basics.
+*/
+
 
 
 #include <stdio.h>
