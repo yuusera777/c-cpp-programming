@@ -2,7 +2,8 @@
 // CDS 251
 // Assignment 13
 // 12.4.2024
-// This assignment is for solving a derived function by Runge Kutta Method and plot for each given y(0) value.
+// This program solves a nonlinear ODE using the Runge–Kutta method for multiple initial conditions 
+// and outputs results to separate files for plotting.
 
 #include <iostream>
 #include <fstream>
