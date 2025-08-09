@@ -6,21 +6,28 @@ Date: 12.4.2024
 Description:
   Despite the filename, this program implements the classical 4th-order Runge–Kutta method
   for y' = y^2 - (y^3)/5 - t. For each initial condition y(0) in a preset list, it integrates
-  from t=0 to 5 with h=0.05 and writes (t, y) pairs to a separate file.
+  from t=0 to 5 with h=0.05 and writes (t, y) pairs to a separate file. The program also prints
+  a confirmation message to the console after each file is saved.
 
 Inputs:
   - None (initial conditions and step size are hard-coded)
 
 Outputs:
-  - Files: "output1.txt", "output2.txt", ... each with tab-separated columns: x    y
+  - Files: "output1.txt", "output2.txt", ...
+      Each file contains:
+        - First line: column headers "x    y" (tab-separated)
+        - Following lines: t and y values with fixed precision (5 decimal places), tab-separated
+  - Console output:
+      "Data saved to <filename>" after each run
 
 Key Skills Demonstrated:
   - RK4 integrator implementation
   - Batch runs over multiple initial conditions
   - Stream output with fixed precision
+  - File I/O with <fstream> and console feedback via <iostream>
 
 The Most Important Thing:
-  - Accurate explicit integration with clear, per-IC output artifacts.
+  - Accurate explicit integration with clear, per-IC output artifacts and user feedback.
 ============================================================================================================== */
 
 
