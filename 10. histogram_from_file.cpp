@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 10-2
 // 11.15.2024
-// This assignment is for reading txt file including the generated random numbers and make histogram.
+// This program reads txt file including the generated random numbers and makes histogram.
 
 
 #include <iostream>
