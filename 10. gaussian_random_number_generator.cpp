@@ -1,8 +1,30 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 10-1
-// 11.15.2024
-// This program generates random numbers using a Gaussian random generator and writes them to a new file.
+/* ==============================================================================================================
+Title: Gaussian Random Number Generator (Box–Muller, Polar Form)
+Author: Yuhyun Kim
+Date: 11.15.2024
+
+Description:
+  Uses the Marsaglia polar form of the Box–Muller transform to generate standard normal pairs.
+  Writes two normal distributions to "Bumps.txt" with specified means, standard deviations, and counts.
+
+Inputs:
+  - User input (stdin):
+      RNG seed (int)
+
+Outputs:
+  - File: "Bumps.txt"
+      First distribution: mean=22.0, stdev=2.5, count=13,000
+      Second distribution: mean=15.5, stdev=1.0, count=7,000
+
+Key Skills Demonstrated:
+  - Implementation of Box–Muller (polar form)
+  - Reproducible RNG via seeding
+  - Buffered file output and basic error handling
+
+The Most Important Thing:
+  - Correct, library-free generation of large Gaussian datasets for downstream analysis.
+============================================================================================================== */
+
 
 #include <stdio.h>
 #include <stdlib.h>
