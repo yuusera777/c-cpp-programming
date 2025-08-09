@@ -2,8 +2,8 @@
 // CDS 251
 // Assignment 3
 // 09.18.2024
-// To calculate mean and standard deviation by open and read txt file including numbers list then allocate memory for an array 
-// using formulas
+// This program is for calculating mean and standard deviation by opening and reading txt file including numbers list, then allocating memory for an array 
+// using formulas.
 
 
 #include <stdio.h>
