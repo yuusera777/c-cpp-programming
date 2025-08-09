@@ -2,6 +2,8 @@
 // CDS 251
 // Assignment 10-extra
 // 11.15.2024
+// This program simulates 2D Brownian motion with defined steps and seed by users, 
+// outputting each position and final coordinates.
 
 
 #include <stdio.h>
