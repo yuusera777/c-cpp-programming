@@ -1,8 +1,28 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 8
-// 11.04.2024
-// This program finds roots of a non linear equation using Newton's Method, Bisection Method and Secant Method.
+/* ==============================================================================================================
+Title: Root-Finding Methods (Newton, Bisection, Secant)
+Author: Yuhyun Kim
+Date: 11.04.2024
+
+Description:
+  Implements three numerical root-finding methods—Newton’s Method, Bisection Method, and Secant Method—
+  to find solutions to nonlinear equations with double precision.
+
+Inputs:
+  - Function defined in code
+  - User-defined initial guesses or intervals
+
+Outputs:
+  - Console: root approximations and iteration counts for each method
+
+Key Skills Demonstrated:
+  - Multiple root-finding algorithms
+  - Double-precision computation
+  - Comparative analysis of convergence rates
+
+The Most Important Thing:
+  - Highlights trade-offs between accuracy, speed, and reliability in numerical analysis.
+============================================================================================================== */
+
 
 #include <iostream>
 #include <cmath>
