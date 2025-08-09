@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 11
 // 11.20.2024
-// This asssignment is for implementing piecewise linear interpolation and Piecewise Quadratic Polynomial Interpolation.
+// This program implements Piecewise Linear Interpolation and Piecewise Quadratic Polynomial Interpolation.
 
 
 #include <stdio.h>
