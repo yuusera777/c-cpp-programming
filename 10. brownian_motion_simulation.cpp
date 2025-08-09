@@ -1,9 +1,30 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 10-extra
-// 11.15.2024
-// This program simulates 2D Brownian motion with defined steps and seed by users, 
-// outputting each position and final coordinates.
+/* ==============================================================================================================
+Title: 2D Brownian Motion (Lattice Random Walk)
+Author: Yuhyun Kim
+Date: 11.15.2024
+
+Description:
+  Simulates a 2D random walk starting at (0,0). At each step, moves one unit in
+  {up, down, left, right} with equal probability. Prints every position and the final location.
+
+Inputs:
+  - User input (stdin):
+      number of steps (int)
+      random seed (int)
+
+Outputs:
+  - Console:
+      "Step i: (x, y)" for each step and the final position summary
+
+Key Skills Demonstrated:
+  - RNG seeding and uniform discrete sampling
+  - Loop-based simulation of stochastic processes
+  - Clear step-by-step console tracing
+
+The Most Important Thing:
+  - Shows a clean, reproducible simulation of 2D Brownian motion (uniform direction, unit step).
+============================================================================================================== */
+
 
 
 #include <stdio.h>
