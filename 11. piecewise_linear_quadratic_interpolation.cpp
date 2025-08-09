@@ -4,9 +4,12 @@ Author: Yuhyun Kim
 Date: 11.20.2024
 
 Description:
-  Loads (x,y) data from "interpolation-data.txt". For 50 evenly spaced x in [x0, x_end],
-  computes piecewise linear interpolation and piecewise quadratic interpolation (via Cramer’s Rule on 3 points).
-  Compares both to sin(x) and prints a formatted table with absolute/relative errors and method differences.
+  Loads (x,y) data from "interpolation-data.txt". For 50 evenly spaced x-values in [x0, x_end],
+  computes:
+    1) Piecewise linear interpolation
+    2) Piecewise quadratic interpolation (via Cramer’s Rule on 3 consecutive points)
+  Compares both to sin(x) and prints a formatted table with absolute/relative errors and 
+  (linear - quadratic)/actual differences.
 
 Inputs:
   - File: "interpolation-data.txt"
@@ -14,17 +17,18 @@ Inputs:
       Next n lines: x y (double)
 
 Outputs:
-  - Console table:
-      x, actual y=sin(x), linear y, quad y, abs/rel errors, (linear-quad)/actual
+  - Console table (values printed with 4 decimal places):
+      x, actual y=sin(x), linear y, quad y, abs/rel errors for each, and method difference ratio
 
 Key Skills Demonstrated:
   - Interpolation (linear, quadratic via Cramer’s Rule)
   - Determinant-based coefficient solving
-  - Error metrics and formatted reporting
+  - Error metrics (absolute, relative) and structured table formatting
 
 The Most Important Thing:
-  - Side-by-side method comparison against an analytic reference (sin) over 50 x-values.
+  - Side-by-side method comparison against an analytic reference (sin) over uniformly spaced x-values.
 ============================================================================================================== */
+
 
 
 
