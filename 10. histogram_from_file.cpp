@@ -2,7 +2,8 @@
 // CDS 251
 // Assignment 10-2
 // 11.15.2024
-// This program reads txt file including the generated random numbers and makes histogram.
+// This program reads a text file containing generated random numbers and constructs a histogram 
+// within a specified range and bin size with counting out-of-range value.
 
 
 #include <iostream>
