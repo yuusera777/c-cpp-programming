@@ -1,9 +1,29 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 10-2
-// 11.15.2024
-// This program reads a text file containing generated random numbers and constructs a histogram 
-// within a specified range and bin size with counting out-of-range value.
+/* ==============================================================================================================
+Title: Histogram from File (Fixed Range & Bins)
+Author: Yuhyun Kim
+Date: 11.15.2024
+
+Description:
+  Reads floating-point values from "Bumps.txt", bins them into a histogram with
+  start=10.0, end=30.0, bins=100, and counts out-of-range values. Opens "BumpsHist.txt"
+  for writing (current code computes counts but does not yet write them to the file).
+
+Inputs:
+  - File: "Bumps.txt" (path currently hard-coded in source)
+
+Outputs:
+  - File: "BumpsHist.txt" (opened; bin counts writing to be added)
+  - (In-memory) int Hist[100] and BadCount
+
+Key Skills Demonstrated:
+  - Streaming file read with scanf/fscanf
+  - Histogram index computation and boundary checks
+  - Basic error handling for file I/O
+
+The Most Important Thing:
+  - Converts raw samples into frequency bins; add a write loop to persist counts.
+============================================================================================================== */
+
 
 
 #include <iostream>
