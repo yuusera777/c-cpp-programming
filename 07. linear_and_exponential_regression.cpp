@@ -1,9 +1,28 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 7
-// 10.29.2024
-// This program finds the linear best fit and the exponential best fit
-// without using given data, arrays, or old variables, by updating values directly.
+============================================================================================================== /*
+Title: Linear and Exponential Regression without Arrays
+Author: Yuhyun Kim
+Date: 10.29.2024
+
+Description:
+  Computes linear and exponential regression parameters without using arrays or retaining past variables.
+  Reads input (x, y) pairs, updates values progressively, and prints the best-fit equations.
+
+Inputs:
+  - File: "RegressionData.txt"
+      Each line: x y
+
+Outputs:
+  - Console: regression equations and coefficients
+
+Key Skills Demonstrated:
+  - Regression model derivation (linear & exponential)
+  - Progressive calculation without storing datasets
+  - Avoidance of old variable storage
+
+The Most Important Thing:
+  - Memory-efficient regression analysis suitable for large datasets.
+*/ ============================================================================================================== 
+
 
 
 
