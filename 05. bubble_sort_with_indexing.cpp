@@ -1,8 +1,31 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 5
-// 10.17.2024
-// This program performs bubble sort using indexing and reads the data with the getline function.
+/* ==============================================================================================================
+Title: Bubble Sort with Indexing and getline Input
+Author: Yuhyun Kim
+Date: 10.17.2024
+
+Description:
+  Implements the Bubble Sort algorithm using array indexing to compare and swap elements.
+  Reads input data (integers) from a text file using the `getline` function for flexible line-based reading.
+  Outputs the sorted sequence to the console.
+
+Inputs:
+  - File: "Numbers_BubbleSort.txt"
+      First line: integer N (number of elements)
+      Next N lines: one integer per line
+
+Outputs:
+  - Console: sorted sequence in ascending order
+
+Key Skills Demonstrated:
+  - Bubble Sort implementation
+  - File reading with getline
+  - Array indexing for sorting
+  - Basic algorithm optimization
+
+The Most Important Thing:
+  - Demonstrates fundamental sorting logic with clear file I/O integration.
+*/ ==============================================================================================================
+
 
 
 #include <cstdio>     
