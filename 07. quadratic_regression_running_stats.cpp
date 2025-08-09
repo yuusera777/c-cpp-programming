@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 7
 // 10.29.2024
-// This assignment is for reading matrix data and calculate the running averages and variances using equations.
+// This program is for reading matrix data and calculating the running averages and variances using equations.
 
 #include <cstdio>
 #include <cmath>
