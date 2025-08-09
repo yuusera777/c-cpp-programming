@@ -1,9 +1,29 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 13
-// 12.4.2024
-// This program solves a nonlinear ODE using the Runge–Kutta method for multiple initial conditions 
-// and outputs results to separate files for plotting.
+/* ==============================================================================================================
+Title: Runge–Kutta (RK4) ODE Solver for Multiple Initial Conditions
+Author: Yuhyun Kim
+Date: 12.4.2024
+
+Description:
+  Despite the filename, this program implements the classical 4th-order Runge–Kutta method
+  for y' = y^2 - (y^3)/5 - t. For each initial condition y(0) in a preset list, it integrates
+  from t=0 to 5 with h=0.05 and writes (t, y) pairs to a separate file.
+
+Inputs:
+  - None (initial conditions and step size are hard-coded)
+
+Outputs:
+  - Files: "output1.txt", "output2.txt", ... each with tab-separated columns: x    y
+
+Key Skills Demonstrated:
+  - RK4 integrator implementation
+  - Batch runs over multiple initial conditions
+  - Stream output with fixed precision
+
+The Most Important Thing:
+  - Accurate explicit integration with clear, per-IC output artifacts.
+============================================================================================================== */
+
+
 
 #include <iostream>
 #include <fstream>
