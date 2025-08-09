@@ -1,9 +1,34 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 3
-// 09.18.2024
-// This program is for calculating mean and standard deviation by opening and reading txt file including numbers list, then allocating memory for an array 
-// using formulas.
+/* ==============================================================================================================
+Title: Single-Pass Algorithm for Mean & Standard Deviation from File
+Author: Yuhyun Kim
+Date: 09.18.2024
+
+Description:
+  Reads an integer N from "Numbers1.txt", then reads N numbers and computes the mean and
+  standard deviation using a numerically stable single-pass algorithm (online calculation).
+  This method allows processing large datasets without storing all values in memory.
+
+Inputs:
+  - File: "Numbers1.txt"
+      First line: integer N
+      Next N lines: one floating-point number per line
+
+Outputs:
+  - Console lines:
+      Mean: <mean_value>
+      Standard Deviation: <sd_value>
+  - Prints "Done!" upon successful completion
+
+Key Skills Demonstrated:
+  - C file I/O with fopen/fscanf/fclose
+  - Dynamic memory allocation (malloc/free)
+  - Numerically stable single-pass (online) mean & variance computation
+  - Using <math.h> sqrt for final SD calculation
+
+The Most Important Thing:
+  - Efficient statistical computation on large datasets with minimal memory usage.
+*/ ==============================================================================================================
+
 
 
 #include <stdio.h>
