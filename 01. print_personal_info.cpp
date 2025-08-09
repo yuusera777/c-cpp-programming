@@ -4,10 +4,8 @@
 // Assignment 1 
 // 09.04.2024
 
-// This program is for Assignment 1.
-// To make sure the program used in the class operating well 
-// in my computer and practice puuting important elements 
-// such as name, email address, course name, and date in programming
+// This program prints personal information (name, email, course, assignment number, and due date) to the console.
+
 
 #include <stdio.h>
 
