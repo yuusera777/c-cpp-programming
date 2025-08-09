@@ -1,8 +1,32 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 4a
-// 09.25.2024
-// This assignment is for practicing to decrypt the message in data file using encryptionmatrix.
+/* ==============================================================================================================
+
+Title: 2×2 Matrix Decryption via Adjugate/Determinant
+Author: Yuhyun Kim
+Date: 09.25.2024
+
+Description:
+  Loads a 2×2 encryption matrix from file, computes its inverse using adjugate and determinant,
+  then reads pairs of encrypted integers and decodes them into ASCII characters to recover the message.
+
+Inputs:
+  - File: "Data3_encryption_matrix.txt"  (matrix size followed by matrix entries)
+  - File: "Data3.txt"                     (pairs of encrypted integers)
+
+Outputs:
+  - Console:
+      - Inverse matrix (for debugging)
+      - Determinant
+      - "Decrypted Message: <text>"
+
+Key Skills Demonstrated:
+  - 2×2 determinant and inverse (adjugate / det)
+  - Mixed C/C++ I/O and containers (cstdio + vector<string>)
+  - Bounds check on ASCII range (32–126) when reconstructing characters
+  - Basic error handling for file access and singular matrices
+
+The Most Important Thing:
+  - Correctly handling det=0 (non-invertible) and mapping decrypted integers back to readable text.
+*/ ==============================================================================================================
 
 
 #include <stdio.h>
