@@ -1,9 +1,31 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 11
-// 11.20.2024
-// This program implements piecewise linear and quadratic polynomial interpolation (using Cramer's Rule) 
-// on data from a file, compares results with the exact sine function, and calculates absolute and relative errors.
+/* ==============================================================================================================
+Title: Piecewise Linear & Quadratic Interpolation with Error Analysis
+Author: Yuhyun Kim
+Date: 11.20.2024
+
+Description:
+  Loads (x,y) data from "interpolation-data.txt". For 50 evenly spaced x in [x0, x_end],
+  computes piecewise linear interpolation and piecewise quadratic interpolation (via Cramer’s Rule on 3 points).
+  Compares both to sin(x) and prints a formatted table with absolute/relative errors and method differences.
+
+Inputs:
+  - File: "interpolation-data.txt"
+      Line 1: n
+      Next n lines: x y (double)
+
+Outputs:
+  - Console table:
+      x, actual y=sin(x), linear y, quad y, abs/rel errors, (linear-quad)/actual
+
+Key Skills Demonstrated:
+  - Interpolation (linear, quadratic via Cramer’s Rule)
+  - Determinant-based coefficient solving
+  - Error metrics and formatted reporting
+
+The Most Important Thing:
+  - Side-by-side method comparison against an analytic reference (sin) over 50 x-values.
+============================================================================================================== */
+
 
 
 #include <stdio.h>
