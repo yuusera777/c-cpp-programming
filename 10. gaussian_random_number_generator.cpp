@@ -4,7 +4,7 @@ Author: Yuhyun Kim
 Date: 11.15.2024
 
 Description:
-  Uses the Marsaglia polar form of the Box–Muller transform to generate standard normal pairs.
+  Uses the Marsaglia polar form of the Box–Muller transform to generate standard-normal pairs.
   Writes two normal distributions to "Bumps.txt" with specified means, standard deviations, and counts.
 
 Inputs:
@@ -13,17 +13,20 @@ Inputs:
 
 Outputs:
   - File: "Bumps.txt"
-      First distribution: mean=22.0, stdev=2.5, count=13,000
-      Second distribution: mean=15.5, stdev=1.0, count=7,000
+      • First distribution: mean = 22.0, stdev = 2.5, count = 13,000
+      • Second distribution: mean = 15.5, stdev = 1.0, count = 7,000
+      • Format: one value per line, printed with 10 decimal places (%.10f)
+      • Total lines: 20,000
 
 Key Skills Demonstrated:
   - Implementation of Box–Muller (polar form)
   - Reproducible RNG via seeding
-  - Buffered file output and basic error handling
+  - File output and basic error handling
 
 The Most Important Thing:
   - Correct, library-free generation of large Gaussian datasets for downstream analysis.
 ============================================================================================================== */
+
 
 
 #include <stdio.h>
