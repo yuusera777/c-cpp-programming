@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 4a
 // 09.25.2024
-// This assignment is for practice to decrypt the message in data file using encryptionmatrix.
+// This program is for practicing to decrypt the message in data file using encryptionmatrix.
 
 
 // This helps with readability and understanding what the program does.
