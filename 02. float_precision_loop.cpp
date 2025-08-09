@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 2
 // 09.11.2024
-// Programming C using float type and iterate addition using for loop
+// This program is for programming C using float type and iterate addition using for loop.
 
 
 #include <stdio.h>
