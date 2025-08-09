@@ -2,8 +2,9 @@
 // CDS 251
 // Assignment 7
 // 10.29.2024
-// This assignment is for finding the Linear best fix and the exponential best fix 
-// not using a given data and not using arrays and old variables by udate the values.
+// This program finds the linear best fit and the exponential best fit
+// without using given data, arrays, or old variables, by updating values directly.
+
 
 
 #include <cstdio>
