@@ -1,9 +1,27 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 13 extra
-// 12.4.2024
-// This program solves the same nonlinear ODE using the Backward Euler method with Newton–Raphson iteration, 
-// generating output files for different initial conditions.
+/* ==============================================================================================================
+Title: Backward Euler ODE Solver with Newton–Raphson (Multiple Initial Conditions)
+Author: Yuhyun Kim
+Date: 12.4.2024
+
+Description:
+  Despite the filename, this program uses implicit Backward Euler for y' = y^2 - (y^3)/5 - t.
+  Each step solves g(y_{n+1}) = y_{n+1} - y_n - h*f(t_{n+1}, y_{n+1}) = 0 via Newton–Raphson.
+  Runs multiple initial conditions from t=0 to 5 with h=0.05 and writes (t, y) to files.
+
+Inputs:
+  - None (initial conditions and step size are hard-coded)
+
+Outputs:
+  - Files: "output_backward1.txt", "output_backward2.txt", ... with tab-separated columns: x    y
+
+Key Skills Demonstrated:
+  - Implicit time stepping (Backward Euler)
+  - Newton–Raphson root finding per step with tolerance/max-iter
+  - Structured file output
+
+The Most Important Thing:
+  - Robust implicit integration pattern suitable for stiffer dynamics.
+============================================================================================================== */
 
 #include <iostream>
 #include <fstream>
