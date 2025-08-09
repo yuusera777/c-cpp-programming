@@ -1,8 +1,29 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 6
-// 10.20.2024
-// This program performs quick sort using indexing.
+/* ==============================================================================================================
+Title: Quick Sort with Indexing
+Author: Yuhyun Kim
+Date: 10.20.2024
+
+Description:
+  Implements the Quick Sort algorithm using array indexing.
+  The algorithm partitions the array recursively for efficient O(n log n) average performance.
+
+Inputs:
+  - File: "Numbers_QuickSort.txt"
+      First line: integer N
+      Next N lines: one integer per line
+
+Outputs:
+  - Console: sorted sequence in ascending order
+
+Key Skills Demonstrated:
+  - Quick Sort algorithm with indexing
+  - Recursive function design
+  - Partitioning logic
+
+The Most Important Thing:
+  - Efficient divide-and-conquer sorting method with clear code structure.
+============================================================================================================== */
+
 
 #include <cstdio>     
 #include <cstdlib>    
