@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 10-1
 // 11.15.2024
-// This assignment is for generating random numbers by Gaussian Random Generator and write to the new file.
+// This program generates random numbers using a Gaussian random generator and writes them to a new file.
 
 #include <stdio.h>
 #include <stdlib.h>
