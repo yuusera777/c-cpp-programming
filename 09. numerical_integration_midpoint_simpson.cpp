@@ -2,7 +2,8 @@
 // CDS 251
 // Assignment 9
 // 11.13.2024
-// This assignment is for programming to calucale area by Mid point Rule and Simpson's Rule.
+// This program calculates the area using the Midpoint Rule and Simpson's Rule.
+
 
 #include <stdio.h>
 #include <math.h>
