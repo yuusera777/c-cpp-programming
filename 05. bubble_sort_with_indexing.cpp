@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 5
 // 10.17.2024
-// This assignment is for Bubblie sorting using indexing and reading the data using getline function.
+// This program is for Bubble sorting by indexing and reading the data using getline function.
 
 
 #include <cstdio>     
