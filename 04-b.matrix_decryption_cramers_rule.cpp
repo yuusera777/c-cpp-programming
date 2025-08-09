@@ -1,17 +1,32 @@
-// Yuhyun Kim
-// CDS 251
-// Assignment 4a
-// 09.25.2024
-// This program is for practicing to decrypt the message in data file using encryptionmatrix.
+/* ==============================================================================================================
+Title: Matrix-Based Message Decryption via Cramer's Rule
+Author: Yuhyun Kim
+Date: 09.25.2024
 
+Description:
+  Loads a 2×2 encryption matrix, verifies non-singularity, then uses Cramer's Rule to solve
+  for plaintext values from each encrypted pair and emits the decrypted ASCII message. Includes
+  utility functions for file handling and 2D array allocation.
 
-// This helps with readability and understanding what the program does.
-// After your name etc, there should be a basic description of
-// what the program does.
+Inputs:
+  - File: "Data3_encryption_matrix.txt"  (2×2 integer matrix)
+  - File: "Data3.txt"                     (sequence of encrypted integer pairs)
 
-// this line is necessary for Visual Studio to 
-// compile the source code without issuing an
-// error message
+Outputs:
+  - Console:
+      - "Determinant of A: <det>"
+      - Decrypted message characters streamed to stdout
+
+Key Skills Demonstrated:
+  - Determinant (2×2 / 3×3) and Cramer's Rule
+  - Column substitution on integer matrices
+  - Manual memory management for dynamic 2D arrays (calloc/free)
+  - C file I/O helpers (open_file/close_file) and validation
+
+The Most Important Thing:
+  - Ensuring the encryption matrix is non-singular before decryption and mapping solved integers to valid bytes (0–255) for readable output.
+*/ ==============================================================================================================
+
 
 
 #include <stdlib.h>
