@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 6
 // 10.20.2024
-// This program is for quick sort using indexing.
+// This program performs quick sort using indexing.
 
 #include <cstdio>     
 #include <cstdlib>    
