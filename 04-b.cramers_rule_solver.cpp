@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 4b
 // 10.3.2024
-// This file is for calculating matrix multiplication by cramer's rule.
+// This program is for calculating matrix multiplication using Cramer's Rule.
 
 #include <iostream>
 #include <fstream>
