@@ -2,7 +2,9 @@
 // CDS 251
 // Assignment 12
 // 12.4.2024
-// This program is for calculate pi in c and calling the function of c into python.
+// This program calculates pi using the Monte Carlo method and provides a vector addition function, 
+// both callable from Python via C function bindings.
+
 
 #include <stdlib.h>
 #include <stdio.h>
