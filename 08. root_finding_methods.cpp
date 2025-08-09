@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 8
 // 11.04.2024
-// This assignment is for finding roots of a non linear equation by Newton's Method, Bisection Method and Secant Method.
+// This program finds roots of a non linear equation using Newton's Method, Bisection Method and Secant Method.
 
 #include <iostream>
 #include <cmath>
