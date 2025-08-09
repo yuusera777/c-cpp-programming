@@ -2,7 +2,7 @@
 // CDS 251
 // Assignment 4a
 // 09.25.2024
-// This assignment is for practice to decrypt the message in data file using encryptionmatrix.
+// This assignment is for practicing to decrypt the message in data file using encryptionmatrix.
 
 
 #include <stdio.h>
