@@ -2,7 +2,8 @@
 // CDS 251
 // Assignment 13 extra
 // 12.4.2024
-// This assignment is for solving a derived function by Backward Euler Method and plot for each given y(0) value.
+// This program solves the same nonlinear ODE using the Backward Euler method with Newton–Raphson iteration, 
+// generating output files for different initial conditions.
 
 #include <iostream>
 #include <fstream>
