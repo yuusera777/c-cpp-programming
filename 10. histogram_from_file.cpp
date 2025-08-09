@@ -4,25 +4,29 @@ Author: Yuhyun Kim
 Date: 11.15.2024
 
 Description:
-  Reads floating-point values from "Bumps.txt", bins them into a histogram with
-  start=10.0, end=30.0, bins=100, and counts out-of-range values. Opens "BumpsHist.txt"
-  for writing (current code computes counts but does not yet write them to the file).
+  Reads floating-point values from "Bumps.txt" and bins them into a histogram with
+  start=10.0, end=30.0, bins=100. Counts out-of-range values as BadCount.
+  Opens "BumpsHist.txt" for writing, but the current version does not yet write
+  the histogram counts to the file (the output file is created empty).
 
 Inputs:
-  - File: "Bumps.txt" (path currently hard-coded in source)
+  - File: "Bumps.txt" (absolute path hard-coded in source:
+           /Users/klieeu777/Desktop/cds251/week10/Bumps.txt)
 
 Outputs:
-  - File: "BumpsHist.txt" (opened; bin counts writing to be added)
-  - (In-memory) int Hist[100] and BadCount
+  - File: "BumpsHist.txt" (created; histogram counts not yet written)
+  - In-memory: int Hist[100], int BadCount
+  - Console: prints error messages only (no normal-run output)
 
 Key Skills Demonstrated:
   - Streaming file read with scanf/fscanf
-  - Histogram index computation and boundary checks
-  - Basic error handling for file I/O
+  - Histogram index computation (fixed range/bins) and boundary checks
+  - Basic file I/O error handling
 
 The Most Important Thing:
-  - Converts raw samples into frequency bins; add a write loop to persist counts.
+  - Converts raw samples into frequency bins in memory; add a write loop to persist counts.
 ============================================================================================================== */
+
 
 
 
