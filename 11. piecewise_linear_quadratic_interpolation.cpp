@@ -2,7 +2,8 @@
 // CDS 251
 // Assignment 11
 // 11.20.2024
-// This program implements Piecewise Linear Interpolation and Piecewise Quadratic Polynomial Interpolation.
+// This program implements piecewise linear and quadratic polynomial interpolation (using Cramer's Rule) 
+// on data from a file, compares results with the exact sine function, and calculates absolute and relative errors.
 
 
 #include <stdio.h>
