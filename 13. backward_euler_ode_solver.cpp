@@ -4,23 +4,33 @@ Author: Yuhyun Kim
 Date: 12.4.2024
 
 Description:
-  Despite the filename, this program uses implicit Backward Euler for y' = y^2 - (y^3)/5 - t.
-  Each step solves g(y_{n+1}) = y_{n+1} - y_n - h*f(t_{n+1}, y_{n+1}) = 0 via Newton–Raphson.
-  Runs multiple initial conditions from t=0 to 5 with h=0.05 and writes (t, y) to files.
+  Implements the implicit Backward Euler method for solving y' = y^2 - (y^3)/5 - t.
+  Each step solves g(y_{n+1}) = y_{n+1} - y_n - h*f(t_{n+1}, y_{n+1}) = 0 using the
+  Newton–Raphson method with a fixed tolerance and maximum iteration count.
+  The solver runs for multiple initial conditions from t=0 to 5 with h=0.05, saving
+  (t, y) pairs to separate output files and printing a confirmation message to the console.
 
 Inputs:
-  - None (initial conditions and step size are hard-coded)
+  - None (initial conditions, step size, tolerance, and max iterations are hard-coded)
 
 Outputs:
-  - Files: "output_backward1.txt", "output_backward2.txt", ... with tab-separated columns: x    y
+  - Files: "output_backward1.txt", "output_backward2.txt", ...
+      Format:
+        First line: "x    y" (tab-separated)
+        Following lines: t and y values, tab-separated, with fixed precision (5 decimal places)
+  - Console output:
+      "Data saved to <filename>" after each run
+      "Warning: Newton-Raphson did not converge" if convergence fails
 
 Key Skills Demonstrated:
   - Implicit time stepping (Backward Euler)
-  - Newton–Raphson root finding per step with tolerance/max-iter
-  - Structured file output
+  - Newton–Raphson root finding with convergence criteria
+  - Structured file output with formatted precision
+  - Console feedback for process tracking and convergence issues
 
 The Most Important Thing:
-  - Robust implicit integration pattern suitable for stiffer dynamics.
+  - Robust implicit integration pattern suitable for stiffer dynamics, with built-in
+    convergence checks and clear output formatting.
 ============================================================================================================== */
 
 #include <iostream>
